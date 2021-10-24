@@ -933,7 +933,7 @@ min-height: 581px;
 background-color: var(--primary-white-color);
 
 border-radius: 4px;
-transition: transform var(--trans-duration) var(--transit-timing-function)
+transition: transform var(--trans-duration) var(--transit-timing-function);
 }
 
 .backdrop.is-hidden .modal {
@@ -947,17 +947,25 @@ transition: transform var(--trans-duration) var(--transit-timing-function)
 }
 
 .btn-close {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: var(--primary-white-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+position: absolute;
+top: 8px;
+right: 8px;
+width: 30px;
+height: 30px;
+border-radius: 50%;
+background: var(--primary-white-color);
+border: 1px solid rgba(0, 0, 0, 0.1);
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+transition: fill var(--trans-duration) var(--transit-timing-function), 
+background var(--trans-duration) var(--transit-timing-function), 
+border var(--trans-duration) var(--transit-timing-function);
+}
+
+.btn-close:hover .svg-close {
+fill: var(--accent-color);
 }
 
 .modal-title {
@@ -980,6 +988,8 @@ font-weight: 400;
 line-height: calc(14 / 12);
 letter-spacing: 0.01em;
 color: var(--secondary-text-color);
+display: block;
+margin-bottom: 4px;
 }
 
 .input-wrapper {
