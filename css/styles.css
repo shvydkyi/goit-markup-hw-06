@@ -8,6 +8,7 @@
   --btn-color: #188ce8;
   --card-set-gap: 30px;
   --icon-color: #AFB1B8;
+  --footer-contact-color: #FFFFFF99;
   --trans-duration: 250ms;
   --transit-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -601,7 +602,7 @@ display: block;
 font-style: normal;
 font-size: 14px;
 line-height: 1.71;
-color: rgba(255, 255, 255, 0.6);
+color: var(--footer-contact-color);
 /* margin-bottom: 6px; */
 transition: color var(--trans-duration) var(--transit-timing-function);
 }
@@ -689,23 +690,24 @@ margin-left: 10px;
 
 .subscribe-field {
   width: 358px;
-  border: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: transparent;
   outline: none;
   font-size: 16px;
   line-height: 1.25;
-  display: inline-block;
+  display: flex;
   align-items: center;
-  color: var(--background-color);
+  color: var(--footer-contact-color);
   padding-left: 16px;
-  transition: border-color var(--trans-duration) var(--transit-timimg-function);
+  transition: border-color var(--trans-duration) var(--transit-timing-function);
 }
+
+
 
 .subscribe-field:hover,
 .subscribe-field:focus {
-  border-color: var(--accent-color);
+ border-color: var(--accent-color);
 }
 
 .subscribe-btn:hover,
