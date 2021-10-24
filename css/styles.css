@@ -274,7 +274,8 @@ transition: color var(--trans-duration) var(--transit-timing-function);
   padding: 10px 32px;
  }
 
-  .hero-btn, .btn-active {
+  .hero-btn, .btn-active,
+  .subscribe-btn {
   transition: color var(--trans-duration) var(--transit-timing-function),
   background-color var(--trans-duration) var(--transit-timing-function),
   box-shadow var(--trans-duration) var(--transit-timing-function);
@@ -615,10 +616,11 @@ transition: color var(--trans-duration) var(--transit-timing-function);
 .footer-soc-section {
   align-items: baseline;
   text-align: left;
+
 }
 
 .footer-join, .subscribe {
-  display: block;
+  display: inline-block; 
   margin-bottom: 20px;
   font-weight: bold;
   font-size: 14px;
@@ -653,11 +655,13 @@ transition: color var(--trans-duration) var(--transit-timing-function);
   transition: background-color var(--trans-duration) var(--transit-timing-function);
 }
 
+.subscribe-section {
+margin-left: auto;
+}
+
 .icon-send-subscribe {
-  width: 24px;
-  height: 24px;
-  fill: var(--primary-white-color);
-  margin-left: 10px;
+fill: var(--primary-white-color);
+margin-left: 10px;
 }
 
 .subscribe-form {
@@ -666,7 +670,19 @@ transition: color var(--trans-duration) var(--transit-timing-function);
 
 .subscribe-btn {
   display: flex;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+  border: none;  
+  min-width: 200px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   padding: 10px 28px;
   margin-left: 12px;
 }
@@ -680,7 +696,7 @@ transition: color var(--trans-duration) var(--transit-timing-function);
   outline: none;
   font-size: 16px;
   line-height: 1.25;
-  display: flex;
+  display: inline-block;
   align-items: center;
   color: var(--background-color);
   padding-left: 16px;
