@@ -1060,10 +1060,6 @@ background: var(--accent-color);
 border: none;
 }
 
-.modal-checkbox:hover, 
-.modal-checkbox:focus {
-background: var(--accent-color);
-}
 
 .check-text {
 font-weight: 400;
@@ -1099,6 +1095,7 @@ border: none;
 .check-text span:focus {
 border-color: var(--accent-color);
 }
+
 
 .check-icon {
 width: 16px;
